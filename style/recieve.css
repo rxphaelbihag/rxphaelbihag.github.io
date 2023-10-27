@@ -1,0 +1,61 @@
+body {
+	background-color: #297094;
+}
+
+.tanan {
+	border-radius: 25px;
+	background: #F6F6F6;
+	padding: 10px 20px 20px 20px; 
+	margin: auto;
+	width: 800px;
+	height: auto;  
+	font-family: 'Cormorant Garamond', serif;
+    font-weight: 900px;
+	animation: transitionIn 0.75s;
+}
+
+h2 {
+	font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+	text-align: center;
+	padding: 25px;
+	font-size: 40px;
+}
+
+.forfont {
+	font-family: 'Khula', sans-serif;
+    font-weight: 400;
+}
+
+a {
+	color: #297094;
+	text-decoration: none;
+	font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+	text-align: center;
+	font-size: 20px;
+}
+
+a:hover {
+	color: #297094;
+	opacity: 0.;
+	text-decoration: none;
+	font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+	text-align: center;
+	font-size: 20px;
+}
+
+h1 {
+	font-family: 'Cormorant Garamond', serif;
+    font-weight: 400;
+	text-align: center;
+	text-decoration: underline overline solid #297994;
+	padding: 25px;
+	font-size: 50px;
+}
+
+@keyframes transitionIn {
+	from {opacity: 0; transform: rotateX(-10deg);}
+	to {opacity: 1; transform: rotateX(0); }
+}

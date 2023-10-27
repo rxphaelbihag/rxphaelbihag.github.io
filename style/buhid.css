@@ -1,0 +1,249 @@
+body {
+	margin: 0;
+	background-color: #F6F6F6;
+	max-width: 3950px;
+}
+section {
+	animation: transitionIn 0.75s;
+}
+
+.tuslokanan a {
+	text-decoration: none;
+}
+.tuslokanan {
+	display: block;
+	background-color: #287094;
+	color: white;
+	font-family: 'Khula', sans-serif;
+    font-weight: 300;
+	letter-spacing: 0.35px;
+	border: none;
+	padding: 15px;
+	position: fixed;
+	cursor: pointer;
+	bottom: 25px;
+	right: 25px;
+	width: 160px;
+	opacity: 0.999;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+	z-index: 9;	
+	animation: sqr 6s infinite;
+}
+
+.tuslokanan:hover {
+	display: block;
+	background-color: #023246;
+	color: white;
+	border: none;
+	padding: 15px;
+	position: fixed;
+	cursor: pointer;
+	bottom: 25px;
+	right: 25px;
+	width: 160px;
+	opacity: 0.999;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+	z-index: 9;	
+}
+
+#tuslokanan a:visited {
+	display: block;
+	background-color: #023246;
+	color: white;
+	border: none;
+	padding: 15px;
+	position: fixed;
+	cursor: pointer;
+	bottom: 25px;
+	right: 25px;
+	width: 160px;
+	opacity: 0.999;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+	z-index: 9;	
+}
+.container {
+	width: 100%;
+	margin: 0 auto;
+	
+}
+
+nav a:link {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: rgb(199,199,199) ;
+  background-color: transparent;
+  text-decoration: none;
+  
+}
+
+header {
+	background-color: #297094; 
+	width: 100%;
+	max-width: 3950px;
+	position: fixed;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+header::after{
+	content:'';
+	display: table;
+	clear: both;
+}
+
+#logo {
+	float: left;
+	width: 230.4px;
+	height: 57.9px;
+	padding: 10px;
+	padding-left: 40px;
+}
+
+
+nav{
+	float: right;
+	font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+	font-size: 22px;
+}
+
+nav ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	
+}
+
+nav li{
+	float: right;
+	display: inline-block; 
+	margin-left:75px;
+	padding-top: 25px;
+	padding-right: 10px;
+}
+
+h1 {
+	font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+	text-align: center;
+	padding: 25px;
+	font-size: 55px;
+}
+
+h2 {
+	font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+	text-decoration: underline overline solid #297994;
+	text-align: center;
+	padding: 25px 0px 25px 0px;
+	font-size: 30px;
+}
+
+#gog {
+	font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+	text-decoration: underline overline solid #297994;
+	text-align: center;
+	padding: 25px 0px 25px 0px;
+	font-size: 25px;
+}
+
+h3 {
+	font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+	font-size: 10px;
+	text-align: center;
+	font-size: 30px;
+}
+
+#p1 {
+	font-family: 'Khula', sans-serif;
+    font-weight: 400;
+	padding: 0px 155px 0px 155px;
+	text-align: justify;
+	font-size: 20px;
+	word-spacing: 5px;
+	line-height: 30px;
+}
+
+#p2 {
+	font-family: 'Khula', sans-serif;
+    font-weight: 400;
+	padding: 0px 155px 0px 155px;
+	text-align: justify;
+	font-size: 18px;
+	word-spacing: 5px;
+	line-height: 30px;
+}
+
+#creds {
+	font-family: 'Khula', sans-serif;
+    font-weight: 400;
+	padding: 0px 155px 0px 155px;
+	text-align: center;
+	font-size: 10px;
+	word-spacing: 5px;
+	line-height: 30px;
+}
+
+#center {
+	text-align: center;
+}
+
+#buhidbamboo {
+	width: 323px;
+	height: 181.25px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#buhidbamboo:hover {
+	width: 323px;
+	height: 181.25px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	animation: imahe 10s infinite;
+}
+
+#ex2 {
+	width: 247.5px;
+	height: 188.1px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#ex2:hover {
+	width: 247.5px;
+	height: 188.1px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	animation: imahe 10s infinite;
+}
+
+footer {
+	background-color: #023246;
+}
+@keyframes sqr{
+	0%		{transform: rotate(0deg);}
+	2%		{transform: rotate(6deg);}
+	4%		{transform: rotate(-6deg);}
+	6%		{transform: rotate(6deg);}
+	8%		{transform: rotate(-6deg);}
+	10%		{transform: rotate( 0deg);}
+}
+@keyframes imahe {
+	0%		{transform: scale(1,1);}
+	10%		{transform: scale(1.1,1.1);}
+	20% 	{transform: scale(1,1);}
+}
+
+@keyframes transitionIn {
+	from {opacity: 0; transform: rotateX(-10deg);}
+	to {opacity: 1; transform: rotateX(0); }
+}

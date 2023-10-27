@@ -1,0 +1,108 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<title>Registration</title>
+		
+		<meta charset= "UTF-8">
+		<meta name="author" content="Raphael Bihag">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<meta name="revised" content="05-22-2021">
+		
+		<link rel="icon" href="icon.png" type="image/gif">
+		<link rel="stylesheet" type="text/css" href="../style/registration.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,700|Khula" rel="stylesheet">
+	</head>
+	<body>
+		<br>
+		<div class = "form">
+		<a href="../index.html">Back to Homepage</a>
+			<center>
+			<div class="rainbow">.
+			</div>
+			</center>
+			<h1 id="title">Student Registration Form</h1>
+			<div class= "forfont">
+				First Name: <input type="text" id="first" placeholder="first name"></input>
+				Last Name: <input type="text" id="last" placeholder="last name"></input><br>
+				Age: <input type="number" id="age" placeholder="age"></input>
+				Gender:<label for="gender" class="selection"></label>
+				  <select id="gender">
+					<option value="Prefer not to mention">Prefer not to mention</option>
+					<option value="male" id = "male" >Male</option>
+					<option value="female">Female</option>
+					<option value="nonbinary">Non-Binary</option>
+					<option value="genderqueer">Gender Queer</option>
+				  </select><br>
+				Email: <input type="email" id="email" placeholder="email adress"><br>
+				Password: <input type="password" id="password" placeholder="at least 8 characters long"><br>
+				Confirm Password: <input type="password" id="password2" placeholder="password"><br>
+				Level of Profession:<label for="level"></label>
+				  <select id="level">
+					<option value="beginner">Beginner</option>
+					<option value="intermidiate">Intermidiate</option>
+					<option value="advance">Advance</option>
+					<option value="pro">Professional</option>
+				  </select><br><br>
+				<center><input type="button" value="Register Now!" onclick="register();" id="button"></center><br>
+			</div>
+			
+		</div>
+		<br>
+		
+		<script>
+						
+			function register() {
+
+                var unaPangalan = document.getElementById("first").value;
+				var ulahiPangalan = document.getElementById("last").value;
+				var edad = document.getElementById("age").value;
+                var kasarian = document.getElementById("gender").value;
+				var emeyl = document.getElementById("email").value;
+				var paswurd = document.getElementById("password").value;
+				var paswurd2 = document.getElementById("password2").value;
+				var lebel = document.getElementById("level").value;
+				var pass = paswurd.length;
+				
+				
+                if (unaPangalan == ""|| ulahiPangalan == ""|| edad == ""|| emeyl == "" || paswurd == "" || paswurd2 == "" || lebel == ""){
+					alert("*All boxes must be filled up. Please try again.*"); 
+					var unaPangalan = document.getElementById("first").value = "";
+					var ulahiPangalan = document.getElementById("last").value = "";
+					var edad = document.getElementById("age").value = "";
+					var kasarian = document.getElementById("gender").value = "";
+					var emeyl = document.getElementById("email").value = "";
+					var paswurd = document.getElementById("password").value = "";
+					var paswurd = document.getElementById("password2").value = "";
+				} else if (pass < 8) {
+					alert("Password must be at least 8 characters");
+					var paswurd = document.getElementById("password").value = "";
+					var paswurd = document.getElementById("password2").value = "";
+				} else if (paswurd !== paswurd2) {
+					alert("Passwords doesn't match");
+				} else {
+					var unaPangalan = unaPangalan.trim()
+					var ulahiPangalan = ulahiPangalan.trim()
+					var url = "receive.html?first=" + encodeURIComponent(unaPangalan) +
+                        "&last=" + encodeURIComponent(ulahiPangalan);
+						
+						document.location.href = url;
+						var unaPangalan = document.getElementById("first").value = "";
+						var ulahiPangalan = document.getElementById("last").value = "";
+						var edad = document.getElementById("age").value = "";
+						var kasarian = document.getElementById("gender").value = "";
+						var emeyl = document.getElementById("email").value = "";
+						var paswurd = document.getElementById("password").value = "";
+						var paswurd = document.getElementById("password2").value = "";
+				}
+				
+				
+				
+				
+				
+				
+
+            }
+		</script>
+	</body>
+</html>

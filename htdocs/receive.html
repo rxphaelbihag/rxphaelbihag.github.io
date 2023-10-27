@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>You are now registered!</title>
+        <meta charset= "UTF-8">
+		<meta name="author" content="Raphael Bihag">
+		<meta name="keywords" content="HTML, CSS, JavaScript">
+		<meta name="revised" content="05-22-2021">
+		
+		<link rel="stylesheet" type="text/css" href="../style/recieve.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond:400,700|Khula" rel="stylesheet">
+    </head>
+	
+    <body>
+	<br>
+	<br>
+        <div class = "tanan"><h2 id = "mensahe">Salamat sa pagiging bahagi ng pamayanan!</h2>
+			<center>
+				<h1 id="name"></h1>
+				<br>
+				<br>
+				<a href="../index.html">Click here to go back to Homepage!</a>
+			</center>
+		</div>
+	   
+        <script>
+            var url = document.location.href;
+			
+			var param = url.split("?")[1].split("&");
+
+			
+			var data = {};
+            var temp = "";
+            
+            for (var i = 0; i < param.length; i++) {
+
+                temp = param[i].split('=');
+				data[temp[0]] = temp[1].replace(/%20/g, " ");
+				
+            }
+			
+			var fullName = data.first + " " + data.last;
+			document.getElementById("name").innerHTML = fullName;
+        </script>
+    </body>
+</html>
